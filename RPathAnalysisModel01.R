@@ -48,7 +48,7 @@ varTable(fit01)
 semPaths(fit01, what='std', nCharNodes=6, sizeMan=10,
          edge.label.cex=1.25, curvePivot = TRUE, fade=FALSE)
 
-ggcorrplot(fitted(fit01, type="cov")$cov, type="upper")
+ggcorrplot(fitted(fit01, type="vcov")$cov, type="upper")
 corrplot(cor(data01[, 11:25]))
 ggpairs(data01[, 11:25])
 
