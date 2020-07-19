@@ -15,7 +15,7 @@ model01 <- "# direct effect
               marketChannelDirectedness ~ a20*districtTimeToLimaMarket + a21*districtTimeToProvinceCapitalOfRegion + a23*informalPriceInformation + a24*formalPriceInformation + a25*informalMetereologicalInformation + a26*formalMetereologicalInformation + a27*volumeOfDistrict + a28*soldProduction + a29*yield + a2a*associative + a2b*pointsOfSale
             # indirect effect
               farmGatePricePerKg ~ b1*marketSize + b2*marketChannelDirectedness
-            # mediation throught market size
+            # mediation through market size
               i_10 := a10*b1
               i_11 := a11*b1
               i_13 := a13*b1
@@ -27,7 +27,7 @@ model01 <- "# direct effect
               i_19 := a19*b1
               i_1a := a1a*b1
               i_1b := a1b*b1
-            # mediation throught market channel directedness
+            # mediation through market channel directedness
               i_20 := a20*b2
               i_21 := a21*b2
               i_23 := a23*b2
